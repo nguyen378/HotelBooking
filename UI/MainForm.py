@@ -530,9 +530,9 @@ class GiaoDien:
         print(data)
         input_df = pd.DataFrame(data=data)
         if self.algorithm_value.get() == 'RandomForest':
-            path = 'E:\Project/MachineLearning/HotelBooking/Model/Rd_clf.pkl'
+            path = 'F:\Project\MachineLearning\HotelBooking\Model\Rd_clf.pkl'
         else:
-            path = 'E:\Project\MachineLearning\HotelBooking\Model\Det_clf.pkl'
+            path = 'F:\Project\MachineLearning\HotelBooking\Model\Det_clf_hotel.pkl'
             
         with open(path, 'rb') as file:
             model = joblib.load(file)       
@@ -580,9 +580,9 @@ class GiaoDien:
         print(data)
         input_df = pd.DataFrame(data=data)
         if self.algorithm_value.get() == 'RandomForest':
-            path = 'E:\Project/MachineLearning/HotelBooking/Model/Rd_clf_hotel.pkl'
+            path = 'F:\Project\MachineLearning\HotelBooking\Model\Rd_clf_hotel.pkl'
         else:
-            path = 'E:\Project\MachineLearning\HotelBooking\Model\Det_clf_hotel.pkl'
+            path = 'F:\Project\MachineLearning\HotelBooking\Model\Det_clf_hotel.pkl'
             
         with open(path, 'rb') as file:
             model = joblib.load(file)       
